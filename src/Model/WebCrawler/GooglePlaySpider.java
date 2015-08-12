@@ -22,8 +22,6 @@ public class GooglePlaySpider extends BaseSpider {
     public void initConnection(String url) {
         m_url = url;
         try {
-            System.setProperty("https.proxyHost", "127.0.0.1");
-            System.setProperty("https.proxyPort", "8087");
             HashMap<String, String> paras = new HashMap<String, String>();
             paras.put("hl", "en");
             paras.put("tab", "w8");
