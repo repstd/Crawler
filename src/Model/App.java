@@ -7,6 +7,7 @@ import java.io.Serializable;
  */
 public class App implements Serializable
 {
+    public String category;
     //like top selling, top free.
     public String cluster;
 
@@ -16,19 +17,39 @@ public class App implements Serializable
     //package name
     public String packageName;
 
-    //TODO:how to rank?
-    public String rank;
+    public int rank;
+
+    public float normalizedRating;
 
     //ratings.like 4.5 out of 5
-    public String rating;
+    public float rating;
+
+    public int ratingCount;
 
     public String description;
 
     @Override
+    public int hashCode() {
+        return (int)rating*packageName.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(this==obj)
+            return true;
+        if(obj==null)
+            return false;
+        if(this.getClass()!=obj.getClass())
+            return false;
+        App other=(App)obj;
+        return this.name.equals(other.name)&&this.packageName.equals(other.packageName);
+    }
+
+    @Override
     public String toString() {
         if(cluster.length()!=0)
-            return String.format("[Name:%s,PackageName:%s,Rank %s in %s,Rating:%s,Desc:%s]",name,packageName,rank,cluster,rating,description);
+            return String.format("[Name:%s,PackageName:%s,Rank %d in %s,Rating:%f,Desc:%s]",name,packageName,rank,cluster,rating,description);
         else
-            return String.format("[Name:%s,PackageName:%s,Rank %s,Rating:%s,Desc:%s]",name,packageName,rank,rating,description);
+            return String.format("[Name:%s,PackageName:%s,Rank %d,Rating:%f,Desc:%s]",name,packageName,rank,rating,description);
     }
 }

@@ -4,6 +4,7 @@ package Model.WebCrawler; /**
 
 import Model.App;
 import Model.Category;
+import Model.Filter;
 import Utils.Constants;
 import Utils.IOUtil;
 import org.jsoup.Jsoup;
@@ -16,39 +17,21 @@ import java.util.*;
 public class GooglePlaySpider extends BaseSpider {
     Document root = null;
     List<String> failedConnection = new ArrayList<String>();
-
+    private Filter filterImpl;
+    public GooglePlaySpider(Filter filter) {
+        filterImpl=filter;
+    }
     @Override
     public void initConnection(String url, HashMap<String, String> paras) {
         m_url = url;
         try {
-            /*
-            //try to update the page sources using HtmlUnitDriver, but doesn't work
-            WebClient webClient = new WebClient(BrowserVersion.FIREFOX_38);
-            java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
-            WebRequest request = new WebRequest(new URL(url));
-            request.setHttpMethod(HttpMethod.GET);
-            ArrayList<NameValuePair> parameters = new ArrayList<NameValuePair>();
-            for (Map.Entry<String, String> entry : paras.entrySet()) {
-                parameters.add(new NameValuePair(entry.getKey(), entry.getValue()));
-            }
-            request.setRequestParameters(parameters);
-            webClient.getOptions().setJavaScriptEnabled(true);
-            webClient.getOptions().setThrowExceptionOnScriptError(false);
-            webClient.getCurrentWindow().setInnerHeight(6000);
-
-            HtmlPage html_src = webClient.getPage(request);
-            ScriptResult sr = html_src.executeJavaScript("window.scrollBy(0,6000)");
-            webClient.loadDownloadedResponses();
-            webClient.waitForBackgroundJavaScript(10000);
-            html_src = (HtmlPage) sr.getNewPage();
-            root = Jsoup.parse(html_src.asXml());
-            webClient.close();
-            */
+            //tried to update the page sources using HtmlUnitDriver, but doesn't work
+            //System.out.println(url);
             if (paras != null)
                 root = Jsoup.connect(url).data(paras).timeout(0).followRedirects(true).get();
             else
                 root = Jsoup.connect(url).timeout(0).followRedirects(true).get();
-            Thread.sleep(5000);
+            Thread.sleep(1000);
         } catch (Exception e) {
             failedConnection.add(url);
             root = null;
@@ -60,6 +43,7 @@ public class GooglePlaySpider extends BaseSpider {
     public Category[] getCategory() {
         if (root == null)
             return new Category[0];
+        initConnection(Constants.GooglePlayApps, null);
         List<Category> parsedResult = new ArrayList<Category>();
         Elements categoryGroup = root.getElementsByClass(Constants.GooglePlayCategoryOuterContainer);
         for (Element groupWrapper : categoryGroup) {
@@ -88,12 +72,12 @@ public class GooglePlaySpider extends BaseSpider {
     }
 
     @Override
-    public void parseCategory(Category category) {
+    public App[] parseCategory(Category category) {
         String fullCategoryUrl = Constants.GooglePlay + category.href;
         HashMap<String, String> paras = new HashMap<String, String>();
         initConnection(fullCategoryUrl, paras);
         if (root == null)
-            return;
+            return new App[0];
         HashMap<String, String> seemoreInfo = new HashMap<String, String>();
         //first of all,we get all of the clusters
         try {
@@ -111,9 +95,26 @@ public class GooglePlaySpider extends BaseSpider {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        ArrayList<App> apps = new ArrayList<App>();
+        Set<App> apps = new LinkedHashSet<>();
         for (Map.Entry<String, String> clusters : seemoreInfo.entrySet()) {
-            parseAppList(category, clusters.getKey(), clusters.getValue());
+            App[] newAppList = parseAppList(category, clusters.getKey(), clusters.getValue());
+            apps.addAll(Arrays.asList(newAppList));
+        }
+        App[] result = new App[apps.size()];
+        apps.toArray(result);
+        Arrays.sort(result,new AppComparator());
+        return result;
+    }
+
+    class AppComparator implements Comparator<App> {
+        @Override
+        public int compare(App o1, App o2) {
+            if (o1.normalizedRating*o1.ratingCount<o2.normalizedRating*o2.ratingCount)
+                return 1;
+            else if (Math.abs(o1.normalizedRating*o1.ratingCount - o2.normalizedRating*o2.ratingCount) < 1e-5)
+                return 0;
+            else
+                return -1;
         }
     }
 
@@ -122,7 +123,9 @@ public class GooglePlaySpider extends BaseSpider {
         int startIndex = 0;
         int numToGet = 100;
         boolean allLoaded = false;
-        HashMap<String, App> appList = new HashMap<String, App>();
+        HashMap<String, App> appList = new LinkedHashMap<>();
+        float minScore = 6;
+        float maxScore = 0;
         try {
             while (!allLoaded) {
                 //update the app list
@@ -134,36 +137,50 @@ public class GooglePlaySpider extends BaseSpider {
                 for (Element appElement : newAppLists) {
                     String packageName = appElement.attr(Constants.GooglePlayAppCardAttrId);
                     String name = appElement.getElementsByAttributeValue(Constants.AttrClass, Constants.GooglePlayAppCardTitleClass).first().attr(Constants.AttrTitle);
-                    String rating="unavailable";
-                    Elements ratingElement= appElement.getElementsByAttributeValue(Constants.AttrClass, Constants.GooglePlayAppCardContentStarRatingClass);
-                    if(ratingElement.size()!=0)
-                        rating=ratingElement.first().attr(Constants.AttrAriaLable);
-                    String description=appElement.getElementsByAttributeValue(Constants.AttrClass,Constants.GooglePlayAppCardContentDescriptionClass).text();
+
+                    String description = appElement.getElementsByAttributeValue(Constants.AttrClass, Constants.GooglePlayAppCardContentDescriptionClass).text();
+                    String clickUrl = appElement.getElementsByAttributeValue(Constants.AttrClass, Constants.GooglePlayAppCardContentClickTargetClass).attr(Constants.AttrHref);
+
+                    initConnection(Constants.GooglePlay + clickUrl, null);
+
+                    String ratingValue = root.getElementsByAttributeValue(Constants.AttrItemprop, Constants.GooglePlayAppDetailsRatingValue).attr(Constants.AttrContent);
+
+                    String ratingCount = root.getElementsByAttributeValue(Constants.AttrItemprop, Constants.GooglePlayAppDetailsRatingCount).attr(Constants.AttrContent);
+
                     //System.out.println(String.format("[%s][%s]", title, packageName));
-                    if (appList.get(name) != null) {
+                    if (appList.get(packageName) != null) {
                         allLoaded = true;
-                        System.out.println(String.format("[%s]:[%s]:[%s]", category.title, cluster, url));
                         System.out.println("duplicate: ");
                         break;
                     }
                     App app = new App();
+                    app.category = category.title;
                     app.cluster = cluster;
                     app.name = name;
                     app.packageName = packageName;
-                    app.rank = Integer.toString(appList.size());
-                    app.rating = rating;
-                    app.description =description;
-                    //System.out.println(app);
-                    appList.put(name, app);
+                    app.rank = appList.size();
+                    app.rating = Float.parseFloat(ratingValue);
+                    app.normalizedRating = app.rating;
+                    app.ratingCount = Integer.parseInt(ratingCount);
+                    app.description = description;
+                    minScore = Math.min(minScore, app.rating);
+                    maxScore = Math.max(maxScore, app.rating);
+                    appList.put(packageName, app);
                 }
                 startIndex += size;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Total found: " + Integer.toString(appList.size()));
+        System.out.println(String.format("[%s]:[%s]:[%s].Total Found: %d", category.title, cluster, url, appList.size()));
         App[] result = new App[appList.size()];
-        appList.values().toArray(result);
+        int index = 0;
+        //normalize the score
+        for (App app : appList.values()) {
+            app.normalizedRating = 5*((app.rating - minScore) / (maxScore - minScore))+0;
+            //System.out.println(app + "normalizedRating: " + Float.toString(app.normalizedRating)+Float.toString(minScore)+" "+Float.toString(maxScore));
+            result[index++] = app;
+        }
         return result;
     }
 
@@ -177,12 +194,11 @@ public class GooglePlaySpider extends BaseSpider {
 
     @Override
     public void saveState(Category category, App[] apps) {
-        //TODO: consider the condition that the task is interrupted
-        IOUtil.writeCategory(category, apps);
+
     }
 
     @Override
     public void loadState(Category category) {
-        App[] apps=IOUtil.loadCategory(category);
+
     }
 }

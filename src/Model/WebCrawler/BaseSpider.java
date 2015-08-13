@@ -18,5 +18,5 @@ public abstract class BaseSpider {
 
     public abstract void saveState(Category category, App[] apps);
 
-    public abstract void parseCategory(Category category);
+    public abstract App[] parseCategory(Category category);
 }

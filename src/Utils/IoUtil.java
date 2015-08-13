@@ -32,8 +32,10 @@ public class IOUtil {
             FileOutputStream fileOut = new FileOutputStream(outFile);
             ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
             if (apps != null) {
-                for (App app : apps)
-                    objectOut.writeObject(objectOut);
+                for (App app : apps) {
+                    //System.out.println(app);
+                    objectOut.writeObject(app);
+                }
             }
             objectOut.close();
             fileOut.close();
@@ -50,11 +52,18 @@ public class IOUtil {
             File inFile = new File(path, category.parent + "_" + category.title);
             if (!inFile.exists())
                 return new App[0];
+            System.out.println(inFile.getAbsolutePath());
             FileInputStream fileIn = new FileInputStream(inFile);
             ObjectInputStream objectIn = new ObjectInputStream(fileIn);
             List<App> applist = new ArrayList<App>();
-            while (objectIn.available() != 0) {
-                applist.add((App) objectIn.readObject());
+            Object temp=objectIn.readObject();
+            while (temp!=null) {
+                System.out.println(temp);
+                applist.add((App)temp);
+                if(objectIn.available()!=0)
+                    temp=objectIn.readObject();
+                else
+                    temp=null;
             }
             App[] result = new App[applist.size()];
             applist.toArray(result);

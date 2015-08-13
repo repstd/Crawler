@@ -30,7 +30,12 @@ public class Constants {
 
     public static String AttrAriaLable="aria-label";
 
+    public static String AttrItemprop="itemprop";
+
+    public static String AttrContent="content";
+
     public static String TagA="a";
+
 
     public static String TagH2="h2";
 
@@ -60,13 +65,9 @@ public class Constants {
 
     public static String GooglePlayAppCardContentDescriptionClass="description";
 
-    public static String GooglePlayAppCardContentStarRatingClass="tiny-star star-rating-non-editable-container";
-
-    public static String GooglePlayAppCardContentStarRating="tiny-star star-rating-non-editable-container";
-
     //details obtained by visiting the href in card view
-    public static String GooglePlayAppDetailsRatingCountClass="rating-count";
+    public static String GooglePlayAppDetailsRatingValue="ratingValue";
 
-    public static String GooglePlayAppDetailsDescriptionClass="description";
+    public static String GooglePlayAppDetailsRatingCount="ratingCount";
 
 }
