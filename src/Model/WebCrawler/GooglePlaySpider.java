@@ -4,9 +4,8 @@ package Model.WebCrawler; /**
 
 import Model.App;
 import Model.Category;
-import Model.Filter;
+import Model.AppListMerger;
 import Utils.Constants;
-import Utils.IOUtil;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -17,10 +16,11 @@ import java.util.*;
 public class GooglePlaySpider extends BaseSpider {
     Document root = null;
     List<String> failedConnection = new ArrayList<String>();
-    private Filter filterImpl;
-    public GooglePlaySpider(Filter filter) {
-        filterImpl=filter;
+    private AppListMerger filterImpl;
+    public GooglePlaySpider(AppListMerger filter) {
+        filterImpl = filter;
     }
+
     @Override
     public void initConnection(String url, HashMap<String, String> paras) {
         m_url = url;
@@ -41,8 +41,6 @@ public class GooglePlaySpider extends BaseSpider {
 
     @Override
     public Category[] getCategory() {
-        if (root == null)
-            return new Category[0];
         initConnection(Constants.GooglePlayApps, null);
         List<Category> parsedResult = new ArrayList<Category>();
         Elements categoryGroup = root.getElementsByClass(Constants.GooglePlayCategoryOuterContainer);
@@ -95,27 +93,15 @@ public class GooglePlaySpider extends BaseSpider {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Set<App> apps = new LinkedHashSet<>();
+        App[] old = new App[0];
         for (Map.Entry<String, String> clusters : seemoreInfo.entrySet()) {
             App[] newAppList = parseAppList(category, clusters.getKey(), clusters.getValue());
-            apps.addAll(Arrays.asList(newAppList));
+            if (this.filterImpl != null) {
+                old = this.filterImpl.merge(old, newAppList);
+                System.out.println(old.length);
+          }
         }
-        App[] result = new App[apps.size()];
-        apps.toArray(result);
-        Arrays.sort(result,new AppComparator());
-        return result;
-    }
-
-    class AppComparator implements Comparator<App> {
-        @Override
-        public int compare(App o1, App o2) {
-            if (o1.normalizedRating*o1.ratingCount<o2.normalizedRating*o2.ratingCount)
-                return 1;
-            else if (Math.abs(o1.normalizedRating*o1.ratingCount - o2.normalizedRating*o2.ratingCount) < 1e-5)
-                return 0;
-            else
-                return -1;
-        }
+        return Arrays.copyOf(old,Math.min(old.length,Constants.MaxAppCount));
     }
 
     private App[] parseAppList(Category category, String cluster, String url) {
@@ -127,8 +113,9 @@ public class GooglePlaySpider extends BaseSpider {
         float minScore = 6;
         float maxScore = 0;
         try {
-            while (!allLoaded) {
+            while (!allLoaded&&startIndex<Constants.MaxAppCount) {
                 //update the app list
+                numToGet=Math.min(numToGet,Constants.MaxAppCount-startIndex);
                 updateAppList(startIndex, numToGet, detailUrl);
                 Elements newAppLists = root.getElementsByAttributeValue(Constants.AttrClass, Constants.GooglePlayAppCardClass);
                 int size = newAppLists.size();
@@ -165,6 +152,7 @@ public class GooglePlaySpider extends BaseSpider {
                     app.description = description;
                     minScore = Math.min(minScore, app.rating);
                     maxScore = Math.max(maxScore, app.rating);
+                    System.out.println(app);
                     appList.put(packageName, app);
                 }
                 startIndex += size;
@@ -174,13 +162,16 @@ public class GooglePlaySpider extends BaseSpider {
         }
         System.out.println(String.format("[%s]:[%s]:[%s].Total Found: %d", category.title, cluster, url, appList.size()));
         App[] result = new App[appList.size()];
+        /*
         int index = 0;
         //normalize the score
         for (App app : appList.values()) {
-            app.normalizedRating = 5*((app.rating - minScore) / (maxScore - minScore))+0;
+            app.normalizedRating = 5 * ((app.rating - minScore) / (maxScore - minScore)) + 0;
             //System.out.println(app + "normalizedRating: " + Float.toString(app.normalizedRating)+Float.toString(minScore)+" "+Float.toString(maxScore));
             result[index++] = app;
         }
+        */
+        appList.values().toArray(result);
         return result;
     }
 

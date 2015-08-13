@@ -1,7 +1,6 @@
 import Model.App;
 import Model.Category;
 import Model.WebCrawler.GooglePlaySpider;
-import Utils.Constants;
 import Utils.IOUtil;
 
 import java.util.HashMap;
@@ -11,28 +10,35 @@ import java.util.HashMap;
  */
 public class Main {
     public static void main(String[] args) {
-        GooglePlaySpider spider = new GooglePlaySpider();
-        HashMap<String, String> paras = new HashMap<String, String>();
-        spider.initConnection(Constants.GooglePlayApps, paras);
+        //we have two choices for merging different clusters in the same categories
+        //IntervalList: merge two app list by turns
+        //RankList: merge two app lists according their rating score
+        GooglePlaySpider spider = new GooglePlaySpider(new IntervalList());
+        /*
         Category[] categories = spider.getCategory();
         for (Category cat : categories) {
-            if(cat.title.equalsIgnoreCase("productivity")) {
-                App[] result=spider.parseCategory(cat);
-                //IOUtil.writeCategory(cat,result);
-                for(App app:result)
-                    System.out.println(app+" "+Float.toString(app.normalizedRating));
-            }
+            App[] apps = spider.parseCategory(cat);
+            //get package name
+            String[] packageNames = IOUtil.getPackagesName(apps);
+            for (App app : apps)
+                System.out.println(app + " " + Float.toString(app.normalizedRating));
+            //write app list to file
+            IOUtil.writeCategory(cat, apps);
         }
-        Category topCharts= new Category();
+        */
+        //we can specify a category manually
+        Category topCharts = new Category();
         topCharts.title = "top_chart";
         topCharts.href = "/store/apps/top";
         topCharts.parent = "";
-        //App[] topChartApp=spider.parseCategory(topCharts);
-        //IOUtil.writeCategory(topCharts,topChartApp);
+        App[] topChartApp = spider.parseCategory(topCharts);
+        for (App app : topChartApp)
+            System.out.println(app + " " + Float.toString(app.normalizedRating));
+        IOUtil.writeCategory(topCharts, topChartApp);
         //test app list loading and writing
-        App[] loaded=IOUtil.loadCategory(topCharts);
-        String[] packageNames=IOUtil.getPackagesName(loaded);
-        for(String packageName:packageNames)
+        App[] loaded = IOUtil.loadCategory(topCharts);
+        String[] packageNames = IOUtil.getPackagesName(loaded);
+        for (String packageName : packageNames)
             System.out.println(packageName);
 
     }
