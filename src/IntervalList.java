@@ -21,13 +21,13 @@ class IntervalList implements AppListMerger {
         Boolean flag = true;
         while (p < m && q < n && result.size()< Constants.MaxAppCount) {
             if (flag) {
-                if (found.get(oldList[p].packageName) == null) {
+                if (!found.containsKey(oldList[p].packageName)) {
                     found.put(oldList[p].packageName, 1);
                     result.add(oldList[p]);
                 }
                 p++;
             } else {
-                if (found.get(newList[q].packageName) == null) {
+                if (!found.containsKey(newList[q].packageName)) {
                     found.put(newList[q].packageName, 1);
                     result.add(newList[q]);
                 }
@@ -36,14 +36,14 @@ class IntervalList implements AppListMerger {
             flag = !flag;
         }
         while (p < m && result.size()< Constants.MaxAppCount) {
-            if (found.get(oldList[p].packageName)== null) {
+            if (!found.containsKey(oldList[p].packageName)) {
                 found.put(oldList[p].packageName, 1);
                 result.add(oldList[p]);
             }
             p++;
         }
         while (q < n && result.size()< Constants.MaxAppCount) {
-            if (found.get(newList[q].packageName) == null) {
+            if (!found.containsKey(newList[q].packageName)) {
                 found.put(newList[q].packageName, 1);
                 result.add(newList[q]);
             }

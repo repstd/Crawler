@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class App implements Serializable
 {
     public String category;
+
     //like top selling, top free.
     public String cluster;
 
@@ -19,10 +20,11 @@ public class App implements Serializable
 
     public int rank;
 
+    //normalize the score to [0,5.0]
     public float normalizedRating;
 
     //ratings.like 4.5 out of 5
-    public float rating;
+    public float ratingValue;
 
     public int ratingCount;
 
@@ -30,7 +32,7 @@ public class App implements Serializable
 
     @Override
     public int hashCode() {
-        return (int)rating*packageName.hashCode();
+        return (int) ratingValue *packageName.hashCode();
     }
 
     @Override
@@ -48,8 +50,8 @@ public class App implements Serializable
     @Override
     public String toString() {
         if(cluster.length()!=0)
-            return String.format("[Name:%s,PackageName:%s,Rank %d in %s,Rating:%f,Desc:%s]",name,packageName,rank,cluster,rating,description);
+            return String.format("[Name:%s,PackageName:%s,Rank %d in %s,Rating:%f,Desc:%s]",name,packageName,rank,cluster, ratingValue,description);
         else
-            return String.format("[Name:%s,PackageName:%s,Rank %d,Rating:%f,Desc:%s]",name,packageName,rank,rating,description);
+            return String.format("[Name:%s,PackageName:%s,Rank %d,Rating:%f,Desc:%s]",name,packageName,rank, ratingValue,description);
     }
 }
