@@ -13,18 +13,6 @@ import java.util.List;
  */
 //some tools to read and write app information
 public class IOUtil {
-    //write a specific
-    public static void clearResult() {
-        try {
-            File path = new File(Constants.ResultDir);
-            if (path.exists() && path.isDirectory())
-                path.delete();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
     static String getFileName(Category category, String cluster) {
         String name = category.title;
         if (cluster != null)

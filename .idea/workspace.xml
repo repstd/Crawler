@@ -2,76 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="635ca35a-562a-4abc-a4ca-67159d62f993" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PackageUpdater.java" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\out\production\PlayCrawler\Model\WebCrawler\AppListUpdater.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Action &amp; Adventure" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Ages 5 &amp; Under" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Ages 6-8" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Ages 9 &amp; Up" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Brain Games" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Creativity" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Education" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Music &amp; Video" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Popular Characters" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Family_Pretend Play" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Action" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Adventure" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Arcade" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Board" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Card" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Casino" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Casual" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Educational" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Music" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Puzzle" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Racing" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Role Playing" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Simulation" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Sports" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Strategy" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Trivia" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\Games_Word" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Books &amp; Reference" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Business" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Comics" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Communication" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Education" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Entertainment" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Finance" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Health &amp; Fitness" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Libraries &amp; Demo" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Lifestyle" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Live Wallpaper" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Media &amp; Video" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Medical" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Music &amp; Audio" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_News &amp; Magazines" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Personalization" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Photography" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Productivity" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Shopping" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Social" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Sports" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Tools" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Transportation" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Travel &amp; Local" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Weather" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_Widgets" afterPath="" />
-      <change type="DELETED" beforePath="D:\MyProject\GitHub\PlayCrawler\result\_top_chart" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlayCrawler/AppComparator.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/AppComparator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlayCrawler/Model/WebCrawler/GooglePlaySpider.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/Model/WebCrawler/GooglePlaySpider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlayCrawler/IntervalList.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/IntervalList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlayCrawler/Main.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlayCrawler/RankList.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/RankList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/App.java" afterPath="$PROJECT_DIR$/src/Model/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/Constants.java" afterPath="$PROJECT_DIR$/src/Utils/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/WebCrawler/GooglePlaySpider.java" afterPath="$PROJECT_DIR$/src/Model/WebCrawler/GooglePlaySpider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IntervalList.java" afterPath="$PROJECT_DIR$/src/IntervalList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RankList.java" afterPath="$PROJECT_DIR$/src/RankList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\MyProject\GitHub\PlayCrawler\out\production\PlayCrawler\Utils\IoUtil.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/Utils/IOUtil.class" />
-      <change type="MOVED" beforePath="D:\MyProject\GitHub\PlayCrawler\src\Utils\IoUtil.java" afterPath="$PROJECT_DIR$/src/Utils/IOUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/IOUtil.java" afterPath="$PROJECT_DIR$/src/Utils/IOUtil.java" />
     </list>
     <ignored path="PlayCrawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -178,13 +109,13 @@
       <file leaf-file-name="IOUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Utils/IOUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.65625">
-              <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.28125">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#2032#2033#0" expanded="true" />
-                <element signature="e#2083#2084#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#1734#1735#0" expanded="true" />
+                <element signature="e#1785#1786#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -774,12 +705,12 @@
       <workItem from="1439442906198" duration="17048000" />
       <workItem from="1439463446282" duration="4796000" />
       <workItem from="1439480201662" duration="25000" />
-      <workItem from="1439481567932" duration="10014000" />
+      <workItem from="1439481567932" duration="10129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31883000" />
+    <option name="totallyTimeSpent" value="31998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -864,10 +795,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#2032#2033#0" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1133,17 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IntervalList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding>
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1873#1874#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/AppListMerger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1224,15 +1144,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/IntervalList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding>
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/IOUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.65625">
-          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.28125">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#2032#2033#0" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
           </folding>
         </state>
       </provider>
