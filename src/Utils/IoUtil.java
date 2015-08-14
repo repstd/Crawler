@@ -36,7 +36,7 @@ public class IOUtil {
         }
     }
 
-    public static void writeCategory(String fileName, App[] apps) {
+    private static void writeCategory(String fileName, App[] apps) {
         try {
             File outFile = new File(fileName);
             FileOutputStream fileOut = new FileOutputStream(outFile);
@@ -65,7 +65,7 @@ public class IOUtil {
         return loadCategory(path + "/" + getFileName(category, cluster));
     }
 
-    public static App[] loadCategory(String fileName) {
+    private static App[] loadCategory(String fileName) {
         List<App> applist = new ArrayList<App>();
         try {
             File inFile = new File(fileName);

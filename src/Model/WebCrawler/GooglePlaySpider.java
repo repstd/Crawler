@@ -16,9 +16,9 @@ import java.util.*;
 
 public class GooglePlaySpider extends BaseSpider {
     Document root = null;
-    List<String> failedConnection = new ArrayList<String>();
     boolean isRatingInfoNeeded = false;
-    private AppListMerger filterImpl;
+    AppListMerger filterImpl;
+    List<String> failedConnection = new ArrayList<String>();
 
     public GooglePlaySpider(AppListMerger filter) {
         filterImpl = filter;
@@ -129,8 +129,8 @@ public class GooglePlaySpider extends BaseSpider {
 
                     String description = appElement.getElementsByAttributeValue(Constants.AttrClass, Constants.GooglePlayAppCardContentDescriptionClass).text();
                     String clickUrl = appElement.getElementsByAttributeValue(Constants.AttrClass, Constants.GooglePlayAppCardContentClickTargetClass).attr(Constants.AttrHref);
-                    String ratingValue = "-1";
-                    String ratingCount = "-1";
+                    String ratingValue = "1";
+                    String ratingCount = "1";
                     if (isRatingInfoNeeded) {
                         initConnection(Constants.GooglePlay + clickUrl, null);
                         ratingValue = root.getElementsByAttributeValue(Constants.AttrItemprop, Constants.GooglePlayAppDetailsRatingValue).attr(Constants.AttrContent);
