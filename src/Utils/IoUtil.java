@@ -13,6 +13,7 @@ import java.util.List;
  */
 //some tools to read and write app information
 public class IOUtil {
+
     static String getFileName(Category category, String cluster) {
         String name = category.title;
         if (cluster != null)
@@ -26,7 +27,7 @@ public class IOUtil {
 
     public static void writeCategory(Category category, String cluster, App[] apps) {
         try {
-            File path = new File(Constants.ResultDir);
+            File path = new File(Constants.CacheDir);
             if (!path.exists())
                 path.mkdir();
             //File outFile = new File(path, getFileName(category, cluster));
@@ -59,7 +60,7 @@ public class IOUtil {
     }
 
     public static App[] loadCategory(Category category, String cluster) {
-        File path = new File(Constants.ResultDir);
+        File path = new File(Constants.CacheDir);
         if (!path.exists())
             return new App[0];
         return loadCategory(path + "/" + getFileName(category, cluster));

@@ -1,0 +1,8 @@
+communication communicationApps 
+productivity productivityApps
+news newsApps
+music musicApps
+transportation transportationApps
+travel travelApps
+free freeApps
+popular_apps topPopularApps

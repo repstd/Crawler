@@ -10,6 +10,8 @@ public class Constants {
 
     public static String GooglePlayApps ="https://play.google.com/store/apps";
 
+    public static String CacheDir ="./cache";
+
     public static String ResultDir="./result";
 
     public static String GooglePlayCategoryOuterContainer ="action-dropdown-outer-list-item";
@@ -70,5 +72,5 @@ public class Constants {
 
     public static String GooglePlayAppDetailsRatingCount="ratingCount";
 
-    public static int MaxAppCount=200;
+    public static int MaxAppCount=600;
 }
