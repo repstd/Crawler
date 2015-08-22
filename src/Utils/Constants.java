@@ -72,5 +72,5 @@ public class Constants {
 
     public static String GooglePlayAppDetailsRatingCount="ratingCount";
 
-    public static int MaxAppCount=600;
+    public static int MaxAppCount=100;
 }

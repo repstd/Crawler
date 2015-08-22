@@ -4,8 +4,10 @@ import Model.Category;
 import Model.WebCrawler.GooglePlaySpider;
 import Utils.Constants;
 import Utils.IOUtil;
+import android.util.Log;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.nio.charset.Charset;
 import java.util.*;
 
@@ -52,7 +54,45 @@ public class PackageUpdater {
         }
     }
 
-    void updateList(String inFilePath, String outFilePath) {
+    HashMap<String, ArrayList<String>> loadList(String oldFilePath) {
+        HashMap<String, ArrayList<String>> oldList = new HashMap<String, ArrayList<String>>();
+        try {
+            File f = new File(oldFilePath);
+            if (!f.exists())
+                return oldList;
+            InputStream fis = new FileInputStream(f);
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader br = new BufferedReader(isr);
+            String currentArrayName = "error";
+            ArrayList<String> currentArray = new ArrayList<String>();
+            String line;
+            while ((line = br.readLine()) != null) {
+                if (line.contains("{")) {
+                    //starting the parentheses
+                    currentArray = new ArrayList<String>();
+                    currentArrayName = line.split(" ")[2];
+                } else if (line.contains("}")) {
+                    //closing the parentheses
+                    currentArray.addAll(Arrays.asList((line.substring(0, line.length() - 2).split("\t")[1]).split(",")));
+                    oldList.put(currentArrayName, currentArray);
+                } else {
+                    if (line.length() >= 2)
+                        currentArray.addAll(Arrays.asList((line.split("\t")[1]).split(",")));
+                }
+            }
+            br.close();
+            isr.close();
+            fis.close();
+        } catch (Exception e) {
+            System.out.println("error in parsing the package list");
+            e.printStackTrace();
+        }
+        return oldList;
+    }
+
+    void updateList(String inFilePath, String outFilePath, String reportOutFilePath) {
+        HashMap<String, ArrayList<String>> oldList = loadList(outFilePath);
+        HashMap<String, Difference> diff = new HashMap<String, Difference>();
         try {
             //update top separately
             getPackageNameList("top");
@@ -71,7 +111,18 @@ public class PackageUpdater {
                 if (temp.length != 2)
                     break;
                 packageList = getPackageNameList(temp[0]);
+
                 if (packageList != null) {
+                    if (oldList.containsKey(temp[1])) {
+                        Difference d = new Difference();
+                        ArrayList<String> oldPackageList = oldList.get(temp[1]);
+                        String[] lp = new String[oldPackageList.size()];
+                        oldPackageList.toArray(lp);
+                        d.oldLen = oldPackageList.size();
+                        d.newLen = packageList.length;
+                        d.common = compare(lp, packageList, true);
+                        diff.put(temp[1], d);
+                    }
                     writeToStringArray(bw, packageList, temp[1]);
                 } else {
                     //read from local file then
@@ -81,15 +132,44 @@ public class PackageUpdater {
             for (Map.Entry<String, String> entry : remainingItems.entrySet()) {
                 packageList = IOUtil.findAllPackagesInCategoryContains(entry.getKey(), Constants.CacheDir, new IntervalList());
                 if (packageList != null) {
+                    if (oldList.containsKey(entry.getValue())) {
+                        Difference d = new Difference();
+                        ArrayList<String> oldPackageList = oldList.get(entry.getValue());
+                        String[] lp = new String[oldPackageList.size()];
+                        oldPackageList.toArray(lp);
+                        d.oldLen = oldPackageList.size();
+                        d.newLen = packageList.length;
+                        d.common = compare(lp, packageList, true);
+                        diff.put(entry.getValue(), d);
+                    }
                     writeToStringArray(bw, packageList, entry.getValue());
                 }
             }
+            writeDifferenceReport(diff, reportOutFilePath);
             bw.close();
             osr.close();
             fout.close();
             br.close();
             isr.close();
             fis.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void writeDifferenceReport(HashMap<String, Difference> result, String outFilePath) {
+        try {
+            OutputStream fout = new FileOutputStream(outFilePath);
+            OutputStreamWriter osw = new OutputStreamWriter(fout);
+            BufferedWriter bw = new BufferedWriter(osw);
+            for (Map.Entry<String, Difference> e : result.entrySet()) {
+                Difference d = e.getValue();
+                bw.write(String.format("%s oldLen_%d newLen_%d common_%d", e.getKey(), d.oldLen, d.newLen, d.common));
+                bw.newLine();
+            }
+            bw.close();
+            osw.close();
+            fout.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -134,16 +214,22 @@ public class PackageUpdater {
             HashSet<String> lbSet = new HashSet<String>();
             lbSet.addAll(Arrays.asList(lb));
             for (String item : la) {
-                if (lbSet.contains(item))
+                if (lbSet.contains(item) || lbSet.contains(item.replace("\"", "")) || lbSet.contains("\"" + item + "\""))
                     common += 1;
             }
         } else {
             int m = Math.min(la.length, lb.length);
             for (int i = 0; i < m; i++) {
-                if (la[i].equalsIgnoreCase(lb[i]))
+                if (la[i].replace("\"", "").equalsIgnoreCase(lb[i].replace("\"", "")))
                     common++;
             }
         }
         return common;
     }
 }
+class Difference {
+    int oldLen;
+    int newLen;
+    int common;
+}
+

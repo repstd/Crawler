@@ -4,6 +4,10 @@ import Model.WebCrawler.GooglePlaySpider;
 import Utils.Constants;
 import Utils.IOUtil;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by yulw on 8/11/2015.
  */
@@ -11,8 +15,9 @@ public class Main {
 
     public static void main(String[] args) {
         PackageUpdater pu = new PackageUpdater();
-        pu.updateList(Constants.ResultDir + "/in.txt", Constants.ResultDir + "/out.txt");
+        pu.updateList(Constants.ResultDir + "/in.txt", Constants.ResultDir + "/out.txt",Constants.ResultDir+"/report.txt");
     }
+
     static void test() {
         String[] productivityApps = {
                 "com.estrongs.android.pop", "com.surpax.ledflashlight.panel", "cc.forestapp", "com.google.android.calendar",

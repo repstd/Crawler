@@ -2,59 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="635ca35a-562a-4abc-a4ca-67159d62f993" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Comics-top free in comics" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Comics-top paid in comics" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Communication-communication apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Communication-mail clients" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Communication-social apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Communication-texting apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Communication-top free in communication" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Communication-video calling" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music &amp; Audio-apps for music lovers" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music &amp; Audio-aspiring guitarists" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music &amp; Audio-making music" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music &amp; Audio-noteworthy music apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music &amp; Audio-popular music apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music &amp; Audio-top free in music &amp; audio" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music &amp; Video-top free in music &amp; video" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music &amp; Video-top paid in music &amp; video" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music-top free in music" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Music-top paid in music" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\News &amp; Magazines-top free in news &amp; magazines" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\News &amp; Magazines-top paid in news &amp; magazines" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Productivity-be more productive" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Productivity-document editing" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Productivity-for the power user" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Productivity-noteworthy productivity" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Productivity-popular productivity" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Productivity-top free in productivity" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Transportation-top free in transportation" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Transportation-top paid in transportation" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Travel &amp; Local-a night on the town" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Travel &amp; Local-apps to use offline" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Travel &amp; Local-book your trip" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Travel &amp; Local-noteworthy travel apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Travel &amp; Local-top free in travel &amp; local" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\Travel &amp; Local-travel &amp; local apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\most_popular-back-to-college" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\most_popular-discover new worlds" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\most_popular-new + updated apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\most_popular-new + updated games" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\most_popular-popular apps + games" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\top_chart-top free in android apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\top_chart-top free in games" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\top_chart-top grossing android apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\top_chart-top grossing games" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\top_chart-top paid in android apps" afterPath="" />
-      <change type="DELETED" beforePath="D:\v-yuliwa\PlayCrawler\result\top_chart-top paid in games" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Communication-communication apps" afterPath="$PROJECT_DIR$/cache/Communication-communication apps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Communication-mail clients" afterPath="$PROJECT_DIR$/cache/Communication-mail clients" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Communication-social apps" afterPath="$PROJECT_DIR$/cache/Communication-social apps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Communication-texting apps" afterPath="$PROJECT_DIR$/cache/Communication-texting apps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlayCrawler/Utils/Constants.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/Utils/Constants.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlayCrawler/Main.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Music &amp; Audio-making music" afterPath="$PROJECT_DIR$/cache/Music &amp; Audio-making music" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PlayCrawler/PackageUpdater.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/PackageUpdater.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Productivity-document editing" afterPath="$PROJECT_DIR$/cache/Productivity-document editing" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Productivity-popular productivity" afterPath="$PROJECT_DIR$/cache/Productivity-popular productivity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Transportation-top free in transportation" afterPath="$PROJECT_DIR$/cache/Transportation-top free in transportation" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Transportation-top paid in transportation" afterPath="$PROJECT_DIR$/cache/Transportation-top paid in transportation" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Travel &amp; Local-a night on the town" afterPath="$PROJECT_DIR$/cache/Travel &amp; Local-a night on the town" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/Travel &amp; Local-travel &amp; local apps" afterPath="$PROJECT_DIR$/cache/Travel &amp; Local-travel &amp; local apps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/popular_apps-new + updated apps" afterPath="$PROJECT_DIR$/cache/popular_apps-new + updated apps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/popular_apps-new + updated games" afterPath="$PROJECT_DIR$/cache/popular_apps-new + updated games" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/popular_apps-popular apps + games" afterPath="$PROJECT_DIR$/cache/popular_apps-popular apps + games" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/top_chart-top free in android apps" afterPath="$PROJECT_DIR$/cache/top_chart-top free in android apps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/top_chart-top free in games" afterPath="$PROJECT_DIR$/cache/top_chart-top free in games" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/top_chart-top grossing android apps" afterPath="$PROJECT_DIR$/cache/top_chart-top grossing android apps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/top_chart-top grossing games" afterPath="$PROJECT_DIR$/cache/top_chart-top grossing games" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/top_chart-top paid in android apps" afterPath="$PROJECT_DIR$/cache/top_chart-top paid in android apps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/top_chart-top paid in games" afterPath="$PROJECT_DIR$/cache/top_chart-top paid in games" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/Constants.java" afterPath="$PROJECT_DIR$/src/Utils/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PackageUpdater.java" afterPath="$PROJECT_DIR$/src/PackageUpdater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result/out.txt" afterPath="$PROJECT_DIR$/result/out.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\v-yuliwa\PlayCrawler\out\production\PlayCrawler\Utils\IoUtil.class" afterPath="$PROJECT_DIR$/out/production/PlayCrawler/Utils/IOUtil.class" />
-      <change type="MOVED" beforePath="D:\v-yuliwa\PlayCrawler\src\Utils\IoUtil.java" afterPath="$PROJECT_DIR$/src/Utils/IOUtil.java" />
     </list>
     <ignored path="PlayCrawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,120 +51,176 @@
     <favorites_list name="PlayCrawler" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PackageUpdater.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PackageUpdater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="15" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
-              <folding>
-                <element signature="e#363#373#0" expanded="true" />
-                <element signature="e#2135#2151#0" expanded="true" />
-                <element signature="e#4739#4747#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Utils/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BufferedReader.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/io/BufferedReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
-              <folding>
-                <element signature="e#2805#2806#0" expanded="true" />
-                <element signature="e#2852#2853#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/io/Reader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IOUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Utils/IOUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.63131315">
-              <caret line="43" column="74" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntervalList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IntervalList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppListMerger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/AppListMerger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.60745174">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PackageUpdater.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/PackageUpdater.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.42540324">
+                  <caret line="210" column="68" selection-start-line="210" selection-start-column="68" selection-end-line="210" selection-end-column="68" />
+                  <folding>
+                    <element signature="e#1685#1712#0" expanded="true" />
+                    <element signature="e#2115#2123#0" expanded="true" />
+                    <element signature="e#3356#3376#0" expanded="true" />
+                    <element signature="e#3960#3976#0" expanded="true" />
+                    <element signature="e#8525#8533#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Utils/Constants.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GooglePlaySpider.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Model/WebCrawler/GooglePlaySpider.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BaseSpider.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Model/WebCrawler/BaseSpider.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="IOUtil.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Utils/IOUtil.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="IntervalList.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/IntervalList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#338#355#0" expanded="false" />
+                    <element signature="e#1846#1847#0" expanded="false" />
+                    <element signature="e#1873#1874#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RankList.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/RankList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#446#463#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
+            <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/Arrays.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="654" column="27" selection-start-line="654" selection-start-column="27" selection-end-line="654" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#160210#0" expanded="false" />
+                    <element signature="e#2050#2051#0" expanded="false" />
+                    <element signature="e#2092#2093#0" expanded="false" />
+                    <element signature="e#3885#3886#0" expanded="false" />
+                    <element signature="e#3927#3928#0" expanded="false" />
+                    <element signature="e#5722#5723#0" expanded="false" />
+                    <element signature="e#5764#5765#0" expanded="false" />
+                    <element signature="e#7559#7560#0" expanded="false" />
+                    <element signature="e#7601#7602#0" expanded="false" />
+                    <element signature="e#9395#9396#0" expanded="false" />
+                    <element signature="e#9437#9438#0" expanded="false" />
+                    <element signature="e#11770#11771#0" expanded="false" />
+                    <element signature="e#11812#11813#0" expanded="false" />
+                    <element signature="e#14690#14691#0" expanded="false" />
+                    <element signature="e#14732#14733#0" expanded="false" />
+                    <element signature="e#37182#37183#0" expanded="false" />
+                    <element signature="e#37239#37240#0" expanded="false" />
+                    <element signature="e#40773#40774#0" expanded="false" />
+                    <element signature="e#40830#40831#0" expanded="false" />
+                    <element signature="e#44365#44366#0" expanded="false" />
+                    <element signature="e#44422#44423#0" expanded="false" />
+                    <element signature="e#47967#47968#0" expanded="false" />
+                    <element signature="e#48024#48025#0" expanded="false" />
+                    <element signature="e#51562#51563#0" expanded="false" />
+                    <element signature="e#51619#51620#0" expanded="false" />
+                    <element signature="e#55237#55238#0" expanded="false" />
+                    <element signature="e#55294#55295#0" expanded="false" />
+                    <element signature="e#59513#59514#0" expanded="false" />
+                    <element signature="e#59570#59571#0" expanded="false" />
+                    <element signature="e#64168#64169#0" expanded="false" />
+                    <element signature="e#64225#64226#0" expanded="false" />
+                    <element signature="e#128641#128642#0" expanded="false" />
+                    <element signature="e#128682#128683#0" expanded="false" />
+                    <element signature="e#129122#129123#0" expanded="false" />
+                    <element signature="e#129161#129162#0" expanded="false" />
+                    <element signature="e#129198#129199#0" expanded="false" />
+                    <element signature="e#129238#129239#0" expanded="false" />
+                    <element signature="e#129654#129655#0" expanded="false" />
+                    <element signature="e#129693#129694#0" expanded="false" />
+                    <element signature="e#130263#130264#0" expanded="false" />
+                    <element signature="e#130310#130311#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="PackageUpdater.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/PackageUpdater.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.09576613">
+                  <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+                  <folding>
+                    <element signature="e#1685#1712#0" expanded="true" />
+                    <element signature="e#2115#2123#0" expanded="true" />
+                    <element signature="e#3356#3376#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -224,6 +255,7 @@
         <option value="$PROJECT_DIR$/src/Model/WebCrawler/GooglePlaySpider.java" />
         <option value="$PROJECT_DIR$/src/Utils/IOUtil.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/result/report.txt" />
         <option value="$PROJECT_DIR$/src/Utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/PackageUpdater.java" />
       </list>
@@ -341,7 +373,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="PackageUpdater.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="PackageUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PackageUpdater.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Difference" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,6 +484,24 @@
               <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="production" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlayCrawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -440,16 +516,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlayCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,6 +528,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.PlayCrawler">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -747,30 +814,35 @@
       <workItem from="1439480201662" duration="25000" />
       <workItem from="1439481567932" duration="10129000" />
       <workItem from="1439518179310" duration="6792000" />
-      <workItem from="1439528047234" duration="8988000" />
+      <workItem from="1439528047234" duration="9208000" />
+      <workItem from="1439555076964" duration="641000" />
+      <workItem from="1439612536480" duration="140000" />
+      <workItem from="1440137343744" duration="2688000" />
+      <workItem from="1440243914239" duration="4844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47778000" />
+    <option name="totallyTimeSpent" value="56311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280943" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.658805" sideWeight="0.13103953" order="7" side_tool="true" content_ui="tabs" x="-43" y="674" width="1920" height="366" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2475442" sideWeight="0.86896044" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40667975" sideWeight="0.86896044" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24840085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1996805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280943" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -781,7 +853,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -806,37 +877,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Model/WebCrawler/BaseSpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/WebCrawler/GooglePlaySpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="183" column="34" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#531#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -849,7 +889,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#338#355#0" expanded="false" />
+            <element signature="e#1846#1847#0" expanded="false" />
+            <element signature="e#1873#1874#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -857,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +909,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-          <folding />
+          <folding>
+            <element signature="e#571#572#0" expanded="false" />
+            <element signature="e#635#636#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -873,10 +920,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -892,12 +936,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#531#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -905,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,9 +951,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -923,12 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#463#0" expanded="true" />
-            <element signature="e#1933#1934#0" expanded="true" />
-            <element signature="e#1960#1961#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -952,7 +982,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#338#355#0" expanded="false" />
+            <element signature="e#1846#1847#0" expanded="false" />
+            <element signature="e#1873#1874#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -960,7 +995,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#571#572#0" expanded="false" />
+            <element signature="e#635#636#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -968,12 +1006,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="147" column="45" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#531#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -981,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,10 +1021,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,9 +1036,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,12 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#463#0" expanded="true" />
-            <element signature="e#1933#1934#0" expanded="true" />
-            <element signature="e#1960#1961#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1039,7 +1059,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#338#355#0" expanded="false" />
+            <element signature="e#1846#1847#0" expanded="false" />
+            <element signature="e#1873#1874#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,7 +1072,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#571#572#0" expanded="false" />
+            <element signature="e#635#636#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,12 +1083,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="147" column="45" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#531#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,7 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,10 +1098,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,7 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,9 +1113,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,7 +1128,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#571#572#0" expanded="false" />
+            <element signature="e#635#636#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,12 +1139,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#531#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1141,7 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,41 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="557" column="19" selection-start-line="557" selection-start-column="19" selection-end-line="557" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/WebCrawler/BaseSpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RankList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#463#0" expanded="true" />
-            <element signature="e#1933#1934#0" expanded="true" />
-            <element signature="e#1960#1961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/WebCrawler/GooglePlaySpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="183" column="34" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#531#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1206,10 +1182,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1217,15 +1190,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IntervalList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-          <folding />
+          <folding>
+            <element signature="e#571#572#0" expanded="false" />
+            <element signature="e#635#636#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1242,16 +1210,93 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
           <folding>
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2852#2853#0" expanded="true" />
+            <element signature="e#0#17179#0" expanded="false" />
+            <element signature="e#2805#2806#0" expanded="false" />
+            <element signature="e#2852#2853#0" expanded="false" />
+            <element signature="e#15051#15052#0" expanded="false" />
+            <element signature="e#15078#15079#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/IntervalList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#338#355#0" expanded="false" />
+            <element signature="e#1846#1847#0" expanded="false" />
+            <element signature="e#1873#1874#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="654" column="27" selection-start-line="654" selection-start-column="27" selection-end-line="654" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#160210#0" expanded="false" />
+            <element signature="e#2050#2051#0" expanded="false" />
+            <element signature="e#2092#2093#0" expanded="false" />
+            <element signature="e#3885#3886#0" expanded="false" />
+            <element signature="e#3927#3928#0" expanded="false" />
+            <element signature="e#5722#5723#0" expanded="false" />
+            <element signature="e#5764#5765#0" expanded="false" />
+            <element signature="e#7559#7560#0" expanded="false" />
+            <element signature="e#7601#7602#0" expanded="false" />
+            <element signature="e#9395#9396#0" expanded="false" />
+            <element signature="e#9437#9438#0" expanded="false" />
+            <element signature="e#11770#11771#0" expanded="false" />
+            <element signature="e#11812#11813#0" expanded="false" />
+            <element signature="e#14690#14691#0" expanded="false" />
+            <element signature="e#14732#14733#0" expanded="false" />
+            <element signature="e#37182#37183#0" expanded="false" />
+            <element signature="e#37239#37240#0" expanded="false" />
+            <element signature="e#40773#40774#0" expanded="false" />
+            <element signature="e#40830#40831#0" expanded="false" />
+            <element signature="e#44365#44366#0" expanded="false" />
+            <element signature="e#44422#44423#0" expanded="false" />
+            <element signature="e#47967#47968#0" expanded="false" />
+            <element signature="e#48024#48025#0" expanded="false" />
+            <element signature="e#51562#51563#0" expanded="false" />
+            <element signature="e#51619#51620#0" expanded="false" />
+            <element signature="e#55237#55238#0" expanded="false" />
+            <element signature="e#55294#55295#0" expanded="false" />
+            <element signature="e#59513#59514#0" expanded="false" />
+            <element signature="e#59570#59571#0" expanded="false" />
+            <element signature="e#64168#64169#0" expanded="false" />
+            <element signature="e#64225#64226#0" expanded="false" />
+            <element signature="e#128641#128642#0" expanded="false" />
+            <element signature="e#128682#128683#0" expanded="false" />
+            <element signature="e#129122#129123#0" expanded="false" />
+            <element signature="e#129161#129162#0" expanded="false" />
+            <element signature="e#129198#129199#0" expanded="false" />
+            <element signature="e#129238#129239#0" expanded="false" />
+            <element signature="e#129654#129655#0" expanded="false" />
+            <element signature="e#129693#129694#0" expanded="false" />
+            <element signature="e#130263#130264#0" expanded="false" />
+            <element signature="e#130310#130311#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RankList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#446#463#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/IOUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1259,30 +1304,46 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/WebCrawler/BaseSpider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/WebCrawler/GooglePlaySpider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PackageUpdater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="15" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.42540324">
+          <caret line="210" column="68" selection-start-line="210" selection-start-column="68" selection-end-line="210" selection-end-column="68" />
           <folding>
-            <element signature="e#363#373#0" expanded="true" />
-            <element signature="e#2135#2151#0" expanded="true" />
-            <element signature="e#4739#4747#0" expanded="true" />
+            <element signature="e#1685#1712#0" expanded="true" />
+            <element signature="e#2115#2123#0" expanded="true" />
+            <element signature="e#3356#3376#0" expanded="true" />
+            <element signature="e#3960#3976#0" expanded="true" />
+            <element signature="e#8525#8533#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/IOUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.63131315">
-          <caret line="43" column="74" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
