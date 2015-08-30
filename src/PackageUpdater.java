@@ -164,7 +164,9 @@ public class PackageUpdater {
             BufferedWriter bw = new BufferedWriter(osw);
             for (Map.Entry<String, Difference> e : result.entrySet()) {
                 Difference d = e.getValue();
-                bw.write(String.format("%s oldLen_%d newLen_%d common_%d", e.getKey(), d.oldLen, d.newLen, d.common));
+
+                //bw.write(String.format("%s oldLen_%d newLen_%d common_%d", e.getKey(), d.oldLen, d.newLen, d.common));
+                bw.write(String.format("%s %d %d %d", e.getKey(), d.oldLen, d.newLen, d.common));
                 bw.newLine();
             }
             bw.close();

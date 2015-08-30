@@ -15,6 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
         PackageUpdater pu = new PackageUpdater();
+
         pu.updateList(Constants.ResultDir + "/in.txt", Constants.ResultDir + "/out.txt",Constants.ResultDir+"/report.txt");
     }
 
