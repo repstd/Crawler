@@ -14,9 +14,16 @@ import java.util.Map;
 public class Main {
 
     public static void main(String[] args) {
-        PackageUpdater pu = new PackageUpdater();
+        //PackageUpdater pu = new PackageUpdater();
 
-        pu.updateList(Constants.ResultDir + "/in.txt", Constants.ResultDir + "/out.txt",Constants.ResultDir+"/report.txt");
+        //pu.updateList(Constants.ResultDir + "/in.txt", Constants.ResultDir + "/out.txt", Constants.ResultDir + "/report.txt");
+
+        Category searchTest = new Category();
+        searchTest.title = "search";
+        searchTest.href = "/store/search?q=keyboards%20for%20android&c=apps";
+        searchTest.parent = "";
+        GooglePlaySpider test = new GooglePlaySpider(new RankList());
+        test.parseCategory(searchTest);
     }
 
     static void test() {

@@ -43,7 +43,8 @@ public class GooglePlaySpider extends BaseSpider {
 
     @Override
     public Category[] getCategory() {
-        initConnection(Constants.GooglePlayApps, null);
+        initConnection("https://play.google.com/store/search?q=keyboards%20for%20android&c=apps&rating=1", null);
+        //initConnection(Constants.GooglePlayApps, null);
         List<Category> parsedResult = new ArrayList<Category>();
         Elements categoryGroup = root.getElementsByClass(Constants.GooglePlayCategoryOuterContainer);
         for (Element groupWrapper : categoryGroup) {
@@ -89,6 +90,7 @@ public class GooglePlaySpider extends BaseSpider {
                     continue;
                 String clusterTitle = clusterTitleEle.first().getElementsByTag(Constants.TagA).first().text();
                 String href = seemore.first().attr(Constants.AttrClass, Constants.GooglePlayAppClusterSeemoreClass).attr(Constants.AttrHref);
+                System.out.println(href);
                 seemoreInfo.put(clusterTitle, href);
             }
         } catch (Exception e) {
@@ -109,7 +111,7 @@ public class GooglePlaySpider extends BaseSpider {
     private App[] parseAppList(Category category, String cluster, String url) {
         String detailUrl = Constants.GooglePlay + url;
         int startIndex = 0;
-        int numToGet = 100;
+        int numToGet = 20;
         boolean allLoaded = false;
         HashMap<String, App> appList = new LinkedHashMap<>();
         float minScore = 6;
@@ -136,7 +138,7 @@ public class GooglePlaySpider extends BaseSpider {
                         ratingValue = root.getElementsByAttributeValue(Constants.AttrItemprop, Constants.GooglePlayAppDetailsRatingValue).attr(Constants.AttrContent);
                         ratingCount = root.getElementsByAttributeValue(Constants.AttrItemprop, Constants.GooglePlayAppDetailsRatingCount).attr(Constants.AttrContent);
                     }
-                    //System.out.println(String.format("[%s][%s]", title, packageName));
+                    System.out.println(String.format("[%s][%s]", category.title, packageName));
                     if (appList.get(packageName) != null) {
                         allLoaded = true;
                         break;
@@ -181,6 +183,8 @@ public class GooglePlaySpider extends BaseSpider {
         paras.put("start", Integer.toString(startIndex));
         paras.put("num", Integer.toString(num));
         paras.put("numChildren", "0");
+        paras.put("ipf","1");
+        paras.put("xhr","1");
         initConnection(url, paras);
     }
 

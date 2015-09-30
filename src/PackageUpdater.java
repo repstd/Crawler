@@ -229,6 +229,7 @@ public class PackageUpdater {
         return common;
     }
 }
+
 class Difference {
     int oldLen;
     int newLen;
