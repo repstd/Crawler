@@ -5,28 +5,72 @@ package Utils;
  */
 public class Constants {
 
-    public static String GooglePlayURL="https://play.google.com/store";
+
+    public static String GooglePlay ="https://play.google.com";
+
+    public static String GooglePlayApps ="https://play.google.com/store/apps";
+
+    public static String CacheDir ="./cache";
 
     public static String ResultDir="./result";
 
-    public static String GooglePlayCategoryGroupWrapperClass="submenu-item-wrapper";
+    public static String GooglePlayCategoryOuterContainer ="action-dropdown-outer-list-item";
 
-    public static String GooglePlayCategoryGroupClass="parent-submenu-link";
+    public static String GooglePlaySubmenuWrapper ="parent-submenu-link-wrapper";
 
-    public static String GooglePlayCategoryClass="child-submenu-link";
+    public static String GooglePlayChildSubmenuWrapper ="child-submenu-link-wrapper";
 
-    public static String GooglePlayAttrTitle="title";
+    public static String GooglePlayCategoryParentSubmenu ="parent-submenu-link";
 
-    public static String GooglePlayAttrHref="href";
+    public static String GooglePlayParentSubmenu ="child-submenu-link";
 
-    public static String GooglePlayCategoryDetailCardListClass="card-list two-cards";
+    public static String AttrTitle ="title";
+
+    public static String AttrHref ="href";
+
+    public static String AttrClass="class";
+
+    public static String AttrAriaLable="aria-label";
+
+    public static String AttrItemprop="itemprop";
+
+    public static String AttrContent="content";
+
+    public static String TagA="a";
+
+
+    public static String TagH2="h2";
+
+    //clusters in apps page,like https://play.google.com/store/apps/category/ENTERTAINMENT
+    public static String GooglePlayAppClusterClass="cluster-heading";
+
+    public static String GooglePlayAppClusterTitleClass="title-link id-track-click";
+
+    public static String GooglePlayAppClusterSeemoreClass="see-more play-button small id-track-click apps id-responsive-see-more";
+
+    public static String GooglePlayAppClusterCardListClass="card-list two-cards";
+
+    //cardview for items in cluster
+    public static String GooglePlayShowMoreButton="show-more-button";
+
+    public static String GooglePlayShowMoreButtonClass="play-button";
 
     public static String GooglePlayAppCardClass="card no-rationale square-cover apps small";
 
-    public static String GooglePlayAppAttrId="data-docid";
+    public static String GooglePlayAppCardAttrId="data-docid";
 
-    public static String GooglePlayAppDetailsClass="details";
+    public static String GooglePlayAppCardTitleClass="title";
 
-    public static String GooglePlayAppDetailsDescriptionClass="description";
+    public static String GooglePlayAppCardContentClass="card-content id-track-click id-track-impression";
 
+    public static String GooglePlayAppCardContentClickTargetClass="card-click-target";
+
+    public static String GooglePlayAppCardContentDescriptionClass="description";
+
+    //details obtained by visiting the href in card view
+    public static String GooglePlayAppDetailsRatingValue="ratingValue";
+
+    public static String GooglePlayAppDetailsRatingCount="ratingCount";
+
+    public static int MaxAppCount=200;
 }
